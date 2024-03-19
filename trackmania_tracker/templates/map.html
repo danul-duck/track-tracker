@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta property="og:description" content="Let's play and track our progress together in near real time.">
+<meta property= "og:image" content='http://141.147.117.232/static/images/og_link_image.jpg'>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trackmania Tracker">
+<head>
+    <title> {{data.track_name}}</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation/dist/chartjs-plugin-annotation.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"> 
+
+</head>
+
+<h1 style="color:black"> {{data.track_name}} </h1>
+<img class="center" src={{data.image_url}} width="100%" height="auto">
+
+
+<body>   
+    <h2> Graph</h2>
+    <div>
+    <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        const config = {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {% for player in chart_data -%}
+                        {
+                            data: {{ chart_data[player] | tojson}},
+                            label: "{{player}}",
+                            fill: true
+                        },
+                    {% endfor -%}
+                 
+                    ]
+            },
+            options: {
+                scales: {
+                    x: {
+                       type: 'timeseries', 
+                    },
+                },
+                title: {
+                    display: false,
+                },
+                plugins :{
+                    annotation:{
+                      annotations:{
+                        bronze:{
+                            type:'line',
+                            yMin: {{data.bronze/1000}},
+                            yMax: {{data.bronze/1000}},
+                            borderColor: 'rgb(205, 127, 50)',
+                            borderWidth: 2,
+                        },
+                        silver:{
+                            type:'line',
+                            yMin: {{data.silver/1000}},
+                            yMax: {{data.silver/1000}},
+                            borderColor: 'rgb( 192, 192, 192)',
+                            borderWidth: 2,
+                        },
+                        gold:{
+                            type:'line',
+                          
+                            yMin: {{data.gold/1000}},
+                            yMax: {{data.gold/1000}},
+                            borderColor: 'rgb( 255, 215, 0)',
+                            borderWidth: 2,
+                        },
+                        author:{
+                            type:'line',
+                            yMin: {{data.author/1000}},
+                            yMax: {{data.author/1000}},
+                            borderColor: 'rgb( 19, 79, 64)',
+                            borderWidth: 2,
+                        },
+                      }
+                    },
+                    zoom:{
+                        zoom:{
+                            wheel : {
+                                enabled:true
+                            },
+                            pinch: {
+                                enabled: true
+                            },
+                            mode: 'y'
+                            }
+                    },
+                    pan :{
+                        enabled: true
+                    }
+                }}
+            };
+        new Chart(document.getElementById("myChart"), config);
+
+     
+    </script>
+    </div>
+
+    <h2> Medals </h2>
+    <div>
+    <table class="fl-table"> 
+        <tr>
+            <th>Medal</th>
+            <th>Time</th>   
+        </tr>
+        <tr>
+            <td> Bronze </td>
+            <td>{{ "{:.3f}".format(data.bronze /1000) }}</td>
+        </tr>
+        <tr>
+            <td> Silver </td>
+            <td>{{ "{:.3f}".format(data.silver /1000) }}</td>
+        </tr>
+        <tr>
+            <td> Gold </td>
+            <td>{{ "{:.3f}".format(data.gold /1000 )}}</td>
+        </tr>
+        <tr>
+            <td> Author </td>
+            <td>{{ "{:.3f}".format(data.author /1000) }}</td>
+        </tr> 
+    </table>
+    </div>
+    
+    <h2> Records </h2>
+    {% for zone in data.leader_boards %}
+    {% for zonename, ranks in zone.items() %}
+    <div> 
+        <details> 
+            <summary>
+                 {{ zonename }}
+                <span class="icon">👇</span>
+            </summary>
+            <table class="fl-table">
+                <tr> 
+                    <th> Rank</th>
+                    <th> User </th>
+                    <th> Zone </th>
+                    <th> Time </th>
+                </tr>
+                {% for time in ranks %}
+                <tr> 
+                    <th> {{ time['position'] }}</th>
+                    <th> {{ time['accountId'] | parse_account }} </th>
+                    <th> {{ time['zoneName'] }} </th>
+                    <th> {{ "{:.3f}".format(time['score'] /1000) }} </th>
+                </tr>
+                {% endfor %}
+            </table>
+        </details>
+        <br>
+    </div>
+    {% endfor %}
+    {% endfor %}
+
+</body>

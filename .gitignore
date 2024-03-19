@@ -1,0 +1,16 @@
+secrets
+env
+instance
+dist
+build
+**.egg-info
+**.key
+**.key.pub
+.DS_STORE
+get_account_ids.py
+main.d
+bin
+lib
+backups
+images
+.vscode

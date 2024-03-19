@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta property="og:description" content="Let's play and track our progress together in near real time.">
+<meta property= "og:image" content='http://141.147.117.232/static/images/og_link_image.jpg'>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trackmania Tracker">
+<style>
+
+    body {
+        background-image: url({{ url_for('static', filename='images/'+season+'.webp') }}) ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;  
+     }
+</style>
+
+<head>
+    
+    <title> {{ season|format_season }} </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"> 
+    <h1> {{season|format_season}}</h1>
+
+</head>
+<body>
+
+<div style="overflow:scroll;height:75vh">
+{% for  track, times in data.items()  -%}
+<div class="table-wrapper">
+    <h1> <a href={{ url_for('app.map', season=season, track_name=track)}}> Track 0{{track}} </a></h1>
+    <table class="fl-table"> 
+        <tr>
+            <th> Player </th>
+            <th> Time </th>
+            <th> Datetime </th>
+            <th> Medal </th>
+        </tr>
+
+        {% for record in times|sort(attribute='time') %}
+        <tr style="{{ record.isotime | check_new_record }}" >
+            <td>{{record.nickname}}</td>
+            <td>{{ "{:.3f}".format(record['time'] /1000) }}</td> 
+            <td>{{ record['isotime'] | format_local_timestamp }}</td>
+            <td>
+                {% if record['medal'] != "0" %}
+                <img 
+                src={{ url_for('static', filename="images/medal_"+ record['medal'] + ".webp" ) }} 
+                width="30px"
+                height="30px"
+                > 
+                {% endif %}
+            </td> 
+        </tr>
+        {% endfor -%}
+    </table>
+    </div>
+    {% endfor -%}
+</div>
+</body>

@@ -1,0 +1,264 @@
+tracks:
+  summer_23:
+    - name: 1
+      id: a93f902b-16a1-4448-ad34-65cf32d41425
+    - name: 2
+      id: 7b9373ad-b754-4c6d-9abf-7304517ba96e
+    - name: 3
+      id: 2123a833-1a50-4900-9f9d-c1c5881bfa30
+    - name: 4
+      id: e4090910-0ce5-4150-8d8e-b1fcbb3aef48
+    - name: 5
+      id: ab8019ba-483a-412c-9d3a-c13f424fa766
+    - name: 6
+      id: f429cb25-3c67-4c6f-a2b9-1cc1e346743f
+    - name: 7
+      id: 8ca2f431-78dc-4be3-8763-bb8489d30f24
+    - name: 8
+      id: 11661ce2-e333-490d-99cb-f1ff6be7826c
+    - name: 9
+      id: ede5d5a1-a6f0-4144-85cd-80dda99a029c
+    - name: 10
+      id: 5d732993-70e3-4b80-b36b-37999dde025b
+    - name: 11
+      id: 8b2c8f9e-3e7a-4866-ae17-9e1d88fb3d64
+    - name: 12
+      id: f6d8b00e-c407-4863-900d-55ac9d6d4d93
+    - name: 13
+      id: 25d27bb9-a648-4161-bc1c-e371b28a8f93
+    - name: 14
+      id: 699e92bf-c556-4136-b6be-0600d27f6ba9
+    - name: 15
+      id: 3ae52cf0-6197-4833-99a2-ad021c44dd6b
+    - name: 16
+      id: fcae0248-db4b-475c-bfc2-bc1ff0a17e12
+    - name: 17
+      id: 6dde3a80-3c1f-4e25-bc29-390c313f93f7
+    - name: 18
+      id: 4320e924-8748-45de-a15e-e160d61f7941
+    - name: 19
+      id: d1c00d8e-b632-4023-8dde-b1e1ca36147f
+    - name: 20
+      id: 12d4be83-0235-4381-a23c-5f776e0826f4
+    - name: 21
+      id: 57907102-2888-4017-a4fa-c47030328809
+    - name: 22
+      id: ecc26d2f-c997-4a77-9129-fed90f6a6b14
+    - name: 23
+      id: abca790b-a6e3-4222-9ddc-049472a0d5fb
+    - name: 24
+      id: 1e0baa7e-7de1-4e83-af67-2c0e92c442d4
+    - name: 25
+      id: 943ca1de-272f-4d7c-a353-d996ff10e4ef
+  autumn_23:
+    - name: 1
+      id: c59359ba-f033-420d-9f18-17b0c5fe8d8b
+    - name: 2
+      id: 32bc6d38-ce2b-4c39-a1ce-e69be8865149
+    - name: 3
+      id: dc100875-ebfc-4157-afe1-ca0e5c266fc9
+    - name: 4
+      id: 5d031733-47bf-49c2-b4f8-af23c01c9061
+    - name: 5
+      id: a9cadab9-824c-4af6-9ff2-bb7571fbaa74
+    - name: 6
+      id: 105192fa-f66c-409d-81d3-84e1e9265901
+    - name: 7
+      id: 99856698-5424-4c71-a4c3-6dc0e35d69db
+    - name: 8
+      id: 70b7d881-7396-4b23-8c01-5d43d8a686c5
+    - name: 9
+      id: 8643b3c7-9613-44d1-9790-0fc71068285a
+    - name: 10
+      id: 35301e62-9d08-404e-a58e-adf9a4256fa4
+    - name: 11
+      id: cc97d70a-1a39-41d9-88be-6aca174c9f52
+    - name: 12
+      id: d432f05c-7352-4956-9226-c3107e85ac12
+    - name: 13
+      id: 628187b7-f3d1-4ca9-a619-38989daaa2d0
+    - name: 14
+      id: ddbceda1-2ca2-4079-8675-63cc324fa7a6
+    - name: 15
+      id: 201eed34-18cb-4a46-ad61-e038e98270d3
+    - name: 16
+      id: 754aacf6-dc3a-4932-9f27-3980107227ca
+    - name: 17
+      id: 5697c692-6e38-41cd-8185-667dd5c4c413
+    - name: 18
+      id: 21f72b78-904a-4c10-b761-1d5958e0d871
+    - name: 19
+      id: 740318c2-41e5-461c-9a8e-687e27831fbc
+    - name: 20
+      id: a019620a-7b53-4a79-8c2a-150f4145e252
+    - name: 21
+      id: 49f1bb49-69a4-4a51-91f7-5a3463582cd5
+    - name: 22
+      id: 1780e317-e6b0-4eb3-87cf-57be96d0cb29
+    - name: 23
+      id: feb1d15d-4dee-4680-bbe5-2170263e0000
+    - name: 24
+      id: c9e5b539-bd86-4b9a-9c41-69811e0af440
+    - name: 25
+      id: b6c6ce5d-e2cc-4730-a68f-535c26f6e0f4
+  winter_24:
+    - id: be4acd7d-1ddc-48a8-875a-dbbe1ff0996e
+      name: 1
+    - id: 7ce3acd8-494b-4caa-9e0e-b7352f9afde1
+      name: 2
+    - id: 93cd9f9e-7075-4a55-8b08-e8a0db416d97
+      name: 3
+    - id: 523e5ff7-08c5-49a7-a939-d3aac1a74e61
+      name: 4
+    - id: d7086b25-9d94-4d0f-84fb-b11a99c0de99
+      name: 5
+    - id: 2e49324b-c83c-45ef-8a2c-7172f3653427
+      name: 6
+    - id: 2cf0ce4d-82f8-48f7-b92a-4dc8e179dda7
+      name: 7
+    - id: 936ec2e4-e14c-4d91-9c93-3e3f5ac53491
+      name: 8
+    - id: 76416c30-70c5-49c1-98e1-aa0f4b4bc476
+      name: 9
+    - id: 66b37789-ecf9-4f02-b402-cdd508e7b086
+      name: 10
+    - id: 2e2a5334-4f2d-4e78-9047-9f01c98837ba
+      name: 11
+    - id: e1566153-df51-43ca-992f-364d50eb5a43
+      name: 12
+    - id: 3a59493f-be45-4e6e-beaa-d9afe48db2f2
+      name: 13
+    - id: a8eb1c95-07b8-460c-aafb-cf883b50113a
+      name: 14
+    - id: 0d4ae83b-0f08-4408-a2e5-2deb6779c371
+      name: 15
+    - id: 1cf76023-71c7-4d44-a25c-f7d443f7d687
+      name: 16
+    - id: 233d2044-c403-47d8-90f4-734a61f9ab48
+      name: 17
+    - id: 0227cb0a-bd61-42dd-b607-d2abf837e805
+      name: 18
+    - id: ce583a45-840d-495c-ab04-e5cc25571898
+      name: 19
+    - id: 874d81b1-9c1a-48c4-91ae-75767fbb358e
+      name: 20
+    - id: e1f60c7c-1381-4251-a9a1-21fdf961be3d
+      name: 21
+    - id: 5090446c-7166-494e-8fa1-ce01e5abce48
+      name: 22
+    - id: 26325150-622f-45f4-acd8-e43c01591843
+      name: 23
+    - id: 6e2bde26-d560-4f06-a33a-67424a5924d3
+      name: 24
+    - id: 28f675f8-0cfa-4f4a-9c95-d64d369fbe7e
+      name: 25
+  micro_maps:
+    - id: e74e44cc-51b9-45ad-ae07-5e5542aadfba
+      name: 1
+    - id: 651c0ea9-9f3a-48d7-9a11-89bf6d286f32
+      name: 2
+    - id: f9b26825-6019-45f1-a242-356d7efcaab1
+      name: 3
+    - id: b449c070-417e-4122-8db7-52d9519b3f04
+      name: 4
+    - id: a6a62559-3438-4fa0-9298-100fa1759eae
+      name: 5
+    - id: ec244561-f3d7-4e7e-b8e8-d9864b0f91c0
+      name: 6
+    - id: 1442e1cc-c70b-4ce4-a642-30977486befd
+      name: 7
+    - id: 3271a651-b4a1-4914-a53a-43d990f9185d
+      name: 8
+    - id: fd020bd4-6558-46f8-8a9d-9fb567c49974
+      name: 9
+    - id: 5ebffb20-d8a2-4506-ba4b-4f39e60412b7
+      name: 10
+    - id: 22c93a08-5c72-4ebe-bfab-3a20d6bf8983
+      name: 11
+    - id: c31222fb-6ba4-4599-8095-4fd3eb15a4a9
+      name: 12
+    - id: 137da9ae-605e-4333-8c3d-d23911f434c5
+      name: 13
+    - id: 110d4fb2-228b-4474-8db2-55302855be96
+      name: 14
+    - id: 15a0cadf-7632-444b-a993-57781316a221
+      name: 15
+    - id: 59844dae-6c52-47a6-b1f6-9cc03109fe7a
+      name: 16
+    - id: cc2c5cd1-849f-4f2a-9a17-ee8a3c106221
+      name: 17
+    - id: 28ae405e-a025-4526-b68e-136a0dbcdf63
+      name: 18
+    - id: ebe08884-f1d0-45c8-baf7-8475234987ff
+      name: 19
+    - id: b5d72ae7-5354-4c92-8276-daca21e9efd7
+      name: 20
+    - id: 2da19c16-4b2b-4a6f-b58b-34568988c636
+      name: 21
+    - id: 9a1b151a-eb62-4af3-8d3c-9522a2012361
+      name: 22
+    - id: 70dccd7e-8292-4cab-b448-70417edd2668
+      name: 23
+    - id: c814442b-8207-46a6-9807-34cf2f41b3e4
+      name: 24
+    - id: 5d733c45-2d2a-4d85-94b6-9a27139b1d2b
+      name: 25
+  rally_discovery:
+    - id: ca763424-e889-4259-b9ec-4b200acb5aa0
+      name: 1
+    - id: 983af7f5-79f6-4e88-8d61-965b092442cf
+      name: 2
+    - id: 820b08fe-a8d8-456f-a6cd-9f5ef416aa4f
+      name: 3
+    - id: 7063b68f-dcc0-492d-ad24-0fc3ac477bb2
+      name: 4
+    - id: b7a8f8fa-7fd3-4970-b6e0-2a6fbca4e902
+      name: 5
+    - id: 01936cf2-4234-437e-9515-5e56cd7e1744
+      name: 6
+    - id: 82229f24-10d5-4cff-8e58-bee5264528fd
+      name: 7
+    - id: 59904b38-261c-4f79-9a40-b3a3e0c64a68
+      name: 8
+    - id: bf8901ea-ac50-4ac3-87e6-7553146a54ca
+      name: 9
+    - id: 5bfb0a10-7337-440e-9a0e-7cd908a86bec
+      name: 10
+    - id: bb7adae8-82d4-4837-98e7-cc31612ff7f0
+      name: 11
+    - id: 9d8d4db6-2311-4827-8b7f-9db03dc096dd
+      name: 12
+    - id: 05018de2-416e-4018-8bd3-c5003511a226
+      name: 13
+    - id: ab69b998-86d1-4680-94a4-7d5033a7d343
+      name: 14
+    - id: 571d44ed-c99a-46c9-babb-3ee8155d1ae6
+      name: 15
+    - id: 106d99b5-2996-4c23-8702-d7d1e0fce2b3
+      name: 16
+    - id: f79d10ab-a7bc-4f62-9a4d-fc44b0f75a41
+      name: 17
+    - id: fa49fe48-f29b-41da-a68d-5ea06a07274e
+      name: 18
+    - id: 1c1a86ba-b0f5-424a-a95d-9fdfa19d7b5b
+      name: 19
+    - id: 30d72bc6-38d7-4152-a0b2-c97a581b0f32
+      name: 20
+    - id: 2a2afda1-5b3e-4013-9fb0-9800bdb29088
+      name: 21
+    - id: ee6f3472-4eaf-479b-bc4f-c2ba3676a439
+      name: 22
+    - id: 4b635c27-4dab-42a7-b812-a11752852f25
+      name: 23
+    - id: e9d9c8f1-4a72-44b3-bc6d-1620f0e23d2b
+      name: 24
+    - id: 9414084c-2d0f-4b63-a415-0739cbc52e2b
+      name: 25
+
+
+players:
+  - name: SomePlayerName
+    id: e9dser8f1-4a72-55yw-bc6d-1620fjf0223d2b
+    nickname: SomePlayerNickname
+
+
